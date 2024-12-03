@@ -71,7 +71,7 @@ public class App {
             }
         }
 
-        System.out.println("Total sum of enabled multiplications: " + total);
+        System.out.println(total);
 
     }
 
