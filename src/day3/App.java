@@ -17,7 +17,6 @@ public class App {
         Pattern pattern = Pattern.compile(regex);
 
         try (Scanner sc = new Scanner(input)) {
-
             while (sc.hasNextLine()) {
                 Matcher matcher = pattern.matcher(sc.nextLine());
                 while (matcher.find()) {
@@ -37,7 +36,6 @@ public class App {
                 int lastParenthesisIndex = next.indexOf(")");
                 int firstNum = Integer.parseInt(next.substring(4, commaIndex));
                 int secondNum = Integer.parseInt(next.substring(commaIndex + 1, lastParenthesisIndex));
-
                 result += (firstNum * secondNum);
             }
             lc.close();
